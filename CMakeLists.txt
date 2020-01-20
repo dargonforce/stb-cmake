@@ -12,7 +12,6 @@ set(STB_NAMES "image;image-write;image-resize;perlin;truetype;rect-pack;ds;sprin
 list(LENGTH STB_FILES STB_LIBRARY_COUNT)
 math(EXPR STB_LIBRARY_COUNT "${STB_LIBRARY_COUNT} - 1")
 
-
 foreach(NTH_STB_LIBRARY RANGE 0 ${STB_LIBRARY_COUNT})
 	list(GET STB_FILES ${NTH_STB_LIBRARY} STB_FILE)
 	list(GET STB_NAMES ${NTH_STB_LIBRARY} STB_NAME)
