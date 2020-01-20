@@ -6,9 +6,9 @@ option(STB_INSTALL "Generate stb installation target" true)
 
 set(STB_INSTALL_INCLUDE_DIR "include")
 
-set(STB_FILES "stb_image.h;stb_image_write.h;stb_image_resize.h;stb_perlin.h")
-set(STB_DEFINES "STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;STB_IMAGE_RESIZE_IMPLEMENTATION;STB_PERLIN_IMPLEMENTATION")
-set(STB_NAMES "image;image-write;image-resize;perlin")
+set(STB_FILES "stb_image.h;stb_image_write.h;stb_image_resize.h;stb_perlin.h;stb_truetype.h")
+set(STB_DEFINES "STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;STB_IMAGE_RESIZE_IMPLEMENTATION;STB_PERLIN_IMPLEMENTATION;STB_TRUETYPE_IMPLEMENTATION")
+set(STB_NAMES "image;image-write;image-resize;perlin;truetype")
 list(LENGTH STB_FILES STB_LIBRARY_COUNT)
 math(EXPR STB_LIBRARY_COUNT "${STB_LIBRARY_COUNT} - 1")
 
